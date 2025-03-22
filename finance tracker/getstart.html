@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GettingStarted</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .GettingStarted {
+            width: 393px;
+            height: 852px;
+            position: relative;
+            background: #060606;
+            overflow: hidden;
+        }
+
+        .StatusBarsWhite {
+            width: 401px;
+            height: 50px;
+            left: -8px;
+            top: -4px;
+            position: absolute;
+        }
+
+        .CombinedShape {
+            left: 380.68px;
+            top: 23.86px;
+            position: absolute;
+        }
+
+        .Rectangle {
+            position: absolute;
+        }
+
+        .Rectangle.battery {
+            left: 361.43px;
+            top: 21.97px;
+        }
+
+        .Rectangle.home-indicator {
+            left: 121px;
+            top: 20px;
+        }
+
+        .Wifi {
+            left: 337.58px;
+            top: 19.69px;
+            position: absolute;
+        }
+
+        .MobileSignal {
+            left: 314.03px;
+            top: 20.08px;
+            position: absolute;
+        }
+
+        .TimeStyle {
+            width: 57.74px;
+            height: 23.86px;
+            left: 22.46px;
+            top: 13.64px;
+            position: absolute;
+        }
+
+        .time-text {
+            width: 56.59px;
+            height: 18px;
+            left: 0px;
+            top: 1.59px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 15px;
+            font-family: 'SF Pro Text', sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+        }
+
+        .HomeIndicatorWhite {
+            width: 375px;
+            height: 34px;
+            left: 9px;
+            top: 818px;
+            position: absolute;
+        }
+
+        .Ellipse16 {
+            width: 324px;
+            height: 324.38px;
+            left: 352.28px;
+            top: 271.55px;
+            position: absolute;
+            transform: rotate(133deg);
+            transform-origin: top left;
+            background: linear-gradient(180deg, rgba(251.81, 209.84, 209.84, 0.31) 0%, rgba(226.31, 0, 0, 0) 76%);
+            border-radius: 9999px;
+        }
+
+        .Ellipse15 {
+            width: 244.42px;
+            height: 246.94px;
+            left: -142.39px;
+            top: 495.51px;
+            position: absolute;
+            transform: rotate(-56deg);
+            transform-origin: top left;
+            background: linear-gradient(195deg, rgba(129.62, 10.80, 10.80, 0.59) 0%, rgba(29.07, 40.40, 142.38, 0) 100%);
+            border-radius: 9999px;
+        }
+
+        .Ellipse12 {
+            width: 506.86px;
+            height: 507.35px;
+            left: 70.92px;
+            top: 50.70px;
+            position: absolute;
+            transform: rotate(-25deg);
+            transform-origin: top left;
+            background: linear-gradient(180deg, rgba(230.56, 45.15, 45.15, 0.25) 0%, rgba(0, 132.60, 255, 0) 79%);
+            border-radius: 9999px;
+        }
+
+        .Rectangle3 {
+            width: 365px;
+            height: 253px;
+            left: 13px;
+            top: 126px;
+            position: absolute;
+            box-shadow: 4px 4px 4px;
+            border-radius: 30px;
+            filter: blur(2px);
+            backdrop-filter: blur(4px);
+        }
+
+        .Xpense {
+            width: 234px;
+            left: 20px;
+            top: 698px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 36px;
+            font-family: 'Bruno Ace SC', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .TheBestWayToTrackYourExpenses {
+            left: 31px;
+            top: 757px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .WelcomeTo {
+            left: 29px;
+            top: 640px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 40px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .Ellipse17 {
+            width: 90px;
+            height: 90px;
+            left: 270px;
+            top: 651px;
+            position: absolute;
+            background: #CDCDCD;
+            border-radius: 9999px;
+        }
+
+        .Vector {
+            left: 303px;
+            top: 671px;
+            position: absolute;
+        }
+
+        .MoneyBag89940202 {
+            width: 113px;
+            height: 113px;
+            left: 29px;
+            top: 59px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="GettingStarted">
+        <div class="StatusBarsWhite">
+            <div class="CombinedShape">
+                <svg width="3" height="6" viewBox="0 0 3 6" fill="none">
+                    <path opacity="0.5"
+                        d="M0.682617 0.864014V5.40947C1.54314 5.02449 2.10272 4.12894 2.10272 3.13674C2.10272 2.14454 1.54314 1.24899 0.682617 0.864014Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="Rectangle battery">
+                <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+                    <path
+                        d="M0.43457 2.30306C0.43457 1.56668 1.03152 0.969727 1.7679 0.969727H18.3493C19.0856 0.969727 19.6826 1.56668 19.6826 2.30306V7.96973C19.6826 8.70611 19.0856 9.30306 18.3493 9.30306H1.7679C1.03152 9.30306 0.43457 8.70611 0.43457 7.96973V2.30306Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="Wifi">
+                <svg width="17" height="14" viewBox="0 0 17 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.74787 3.28184C11.1174 3.28195 13.3963 4.24949 15.1136 5.98449C15.2429 6.11844 15.4496 6.11675 15.577 5.98071L16.8131 4.65495C16.8776 4.58595 16.9136 4.49248 16.913 4.39523C16.9125 4.29798 16.8755 4.20496 16.8103 4.13677C12.3029 -0.453629 5.19208 -0.453629 0.684735 4.13677C0.619443 4.20491 0.582397 4.2979 0.581795 4.39515C0.581192 4.4924 0.617084 4.5859 0.681527 4.65495L1.91803 5.98071C2.04531 6.11696 2.25217 6.11865 2.38141 5.98449C4.09892 4.24938 6.37811 3.28184 8.74787 3.28184ZM8.74787 7.5951C10.0498 7.59501 11.3052 8.10926 12.2703 9.0379C12.4008 9.1697 12.6064 9.16684 12.7336 9.03146L13.9684 7.7057C14.0334 7.63617 14.0695 7.54183 14.0685 7.4438C14.0676 7.34577 14.0297 7.25223 13.9634 7.18411C11.0246 4.27913 6.4736 4.27913 3.53486 7.18411C3.46848 7.25223 3.4306 7.34582 3.42973 7.44388C3.42886 7.54194 3.46507 7.63627 3.53023 7.7057L4.7646 9.03146C4.89183 9.16684 5.09745 9.1697 5.22797 9.0379C6.19238 8.10987 7.44682 7.59567 8.74787 7.5951ZM11.2212 10.4972C11.2231 10.5955 11.1868 10.6902 11.1207 10.7591L8.98492 13.0496C8.92231 13.117 8.83695 13.1548 8.74788 13.1548C8.65881 13.1548 8.57345 13.117 8.51084 13.0496L6.37467 10.7591C6.30868 10.6902 6.27238 10.5954 6.27434 10.4971C6.27629 10.3988 6.31634 10.3057 6.38501 10.2398C7.74902 9.01379 9.74674 9.01379 11.1108 10.2398C11.1794 10.3057 11.2194 10.3989 11.2212 10.4972Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="MobileSignal">
+                <svg width="19" height="13" viewBox="0 0 19 13" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.1369 0.0758057H16.0676C15.477 0.0758057 14.9982 0.584573 14.9982 1.21217V11.0607C14.9982 11.6883 15.477 12.197 16.0676 12.197H17.1369C17.7275 12.197 18.2062 11.6883 18.2062 11.0607V1.21217C18.2062 0.584573 17.7275 0.0758057 17.1369 0.0758057ZM11.0774 2.72732H12.1467C12.7373 2.72732 13.216 3.23609 13.216 3.86369V11.0607C13.216 11.6883 12.7373 12.197 12.1467 12.197H11.0774C10.4868 12.197 10.008 11.6883 10.008 11.0607V3.86369C10.008 3.23609 10.4868 2.72732 11.0774 2.72732ZM7.15646 5.37884H6.08713C5.49655 5.37884 5.01779 5.8876 5.01779 6.5152V11.0607C5.01779 11.6883 5.49655 12.197 6.08713 12.197H7.15646C7.74704 12.197 8.2258 11.6883 8.2258 11.0607V6.5152C8.2258 5.8876 7.74704 5.37884 7.15646 5.37884ZM2.16624 7.65156H1.09691C0.506341 7.65156 0.0275879 8.16033 0.0275879 8.78793V11.0607C0.0275879 11.6883 0.506341 12.197 1.09691 12.197H2.16624C2.75681 12.197 3.23557 11.6883 3.23557 11.0607V8.78793C3.23557 8.16033 2.75681 7.65156 2.16624 7.65156Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="TimeStyle">
+                <div class="time-text">9:41</div>
+            </div>
+        </div>
+        <div class="HomeIndicatorWhite">
+            <div class="Rectangle home-indicator">
+                <svg width="134" height="5" viewBox="0 0 134 5" fill="none">
+                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 2.5C0 1.11929 1.11929 0 2.5 0H131.5C132.881 0 134 1.11929 134 2.5C134 3.88071 132.881 5 131.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
+                        fill="#454545" />
+                </svg>
+            </div>
+        </div>
+        <div class="Ellipse16"></div>
+        <div class="Ellipse15"></div>
+        <div class="Ellipse12"></div>
+        <div class="Rectangle3"></div>
+        <div class="Xpense">Xpense</div>
+        <div class="TheBestWayToTrackYourExpenses">The best way to track your expenses.</div>
+        <div class="WelcomeTo">Welcome to</div>
+        <a href="login.html">
+            <div class="Ellipse17"> </div>
+        </a>
+        <div class="Vector">
+           <a href="login.html"> <svg width="35" height="60" viewBox="0 0 35 60" fill="none">
+                <path d="M5 55L30 30L5 5" stroke="#060607" stroke-width="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg></a>
+        </div>
+        <img class="MoneyBag89940202"
+            src="data:image/png;base64,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"
+            </div>
+</body>
+
+</html>

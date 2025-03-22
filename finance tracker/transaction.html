@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransactionInfoPage</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .TransactionInfoPage {
+            width: 393px;
+            height: 852px;
+            position: relative;
+            background: #060607;
+            overflow: hidden;
+        }
+
+        .StatusBarsWhite {
+            width: 401px;
+            height: 50px;
+            left: -8px;
+            top: -4px;
+            position: absolute;
+        }
+
+        .CombinedShape {
+            left: 380.68px;
+            top: 23.86px;
+            position: absolute;
+        }
+
+        .Rectangle {
+            position: absolute;
+        }
+
+        .Rectangle.battery {
+            left: 361.43px;
+            top: 21.97px;
+        }
+
+        .Wifi {
+            left: 337.58px;
+            top: 19.69px;
+            position: absolute;
+        }
+
+        .MobileSignal {
+            left: 314.03px;
+            top: 20.08px;
+            position: absolute;
+        }
+
+        .TimeStyle {
+            width: 57.74px;
+            height: 23.86px;
+            left: 22.46px;
+            top: 13.64px;
+            position: absolute;
+        }
+
+        .time-text {
+            width: 57.74px;
+            height: 20.45px;
+            left: 0px;
+            top: 2.27px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 15px;
+            font-family: 'SF Pro Text', sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+        }
+
+        .HomeIndicatorWhite {
+            width: 375px;
+            height: 34px;
+            left: 9px;
+            top: 818px;
+            position: absolute;
+        }
+
+        .HomeIndicatorWhite .Rectangle {
+            left:  Nz121px;
+            top: 20px;
+        }
+
+        .Rectangle16 {
+            width: 375px;
+            height: 277px;
+            left: 9px;
+            top: 64px;
+            position: absolute;
+            background: linear-gradient(164deg, rgba(229.50, 0, 0, 0.50) 3%, rgba(167.88, 18.89, 18.89, 0) 77%);
+            border-radius: 30px;
+        }
+
+        .Rectangle3 {
+            width: 365px;
+            height: 253px;
+            left: 13px;
+            top: 126px;
+            position: absolute;
+            box-shadow: 4px 4px 4px;
+            border-radius: 30px;
+            filter: blur(2px);
+            backdrop-filter: blur(4px);
+        }
+
+        .Transactions {
+            left: 132px;
+            top: 28px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 24px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .Rectangle10 {
+            width: 232px;
+            height: 63px;
+            left: 95px;
+            top: 70px;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.90);
+            border-radius: 40px;
+        }
+
+        .Rectangle11 {
+            width: 133px;
+            height: 54px;
+            left: 188px;
+            top: 75px;
+            position: absolute;
+            background: #D44848;
+            border-radius: 40px;
+        }
+
+        .Feb2024 {
+            width: 117px;
+            height: 34px;
+            left: 224px;
+            top: 139px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: rgba(255, 255, 255, 0.73);
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .Vector {
+            position: absolute;
+        }
+
+        .dropdown-arrow {
+            left: 337px;
+            top: 156px;
+        }
+
+        .Expence {
+            left: 108px;
+            top: 90px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: #660101;
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .Income {
+            left: 227px;
+            top: 90px;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .Oval {
+            width: 96.29px;
+            height: 100px;
+            left: 243px;
+            top: 195px;
+            position: absolute;
+            border-radius: 9999px;
+            outline: 30px rgba(255, 177.44, 177.44, 0.85) solid;
+            outline-offset: -15px;
+        }
+
+        .Path {
+            position: absolute;
+        }
+
+        .path1 {
+            left: 251.76px;
+            top: 248px;
+        }
+
+        .path2 {
+            left: 291.15px;
+            top: 276.41px;
+        }
+
+        .path3 {
+            left: 291.15px;
+            top: 198px;
+        }
+
+        .percentage {
+            width: 18.97px;
+            height: 16.47px;
+            left: 332.73px;
+            top: 238.09px;
+            position: absolute;
+            color: white;
+            font-size: 11px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.17px;
+            word-wrap: break-word;
+        }
+
+        .Ellipse14 {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: rgba(255, 194.44, 194.44, 0);
+            border-radius: 9999px;
+            border: 6px white solid;
+        }
+
+        .earned-dot {
+            left: 26px;
+            top: 248px;
+        }
+.Spent{
+    
+    left: 64px;
+    top: 190px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+        .spent-dot {
+            left: 26px;
+            top: 187px;
+        }
+
+        .Earned {
+            left: 64px;
+            top: 252px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: rgba(255, 255, 255, 0.80);
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .amount {
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: rgba(255, 255, 255, 0.80);
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .earned-amount {
+            left: 63px;
+            top: 284px;
+        }
+
+        .spent-amount {
+            left: 69px;
+            top: 222px;
+        }
+
+        .Rectangle14 {
+            width: 360px;
+            height: 77px;
+            left: 18px;
+            position: absolute;
+            background: linear-gradient(269deg, #500202 0%, rgba(80, 2, 2, 0) 100%);
+            box-shadow: 0px 4px 4px rgba(60.56, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+
+        .transaction1 { top: 363px; }
+        .transaction2 { top: 457px; }
+        .transaction3 { top: 551px; }
+        .transaction4 { top: 645px; }
+        .transaction5 { top: 739px; }
+
+        .income-amount {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .income1 { left: 297px; top: 386px; }
+        .income2 { left: 297px; top: 480px; }
+        .income3 { left: 297px; top: 574px; }
+        .income4 { left: 297px; top: 668px; }
+        .income5 { left: 297px; top: 762px; }
+
+        .Rectangle15 {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            background: black;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: 1px white solid;
+        }
+
+        .icon-box1 { left: 27px; top: 371px; }
+        .icon-box2 { left: 27px; top: 465px; }
+        .icon-box3 { left: 27px; top: 559px; }
+        .icon-box4 { left: 27px; top: 653px; }
+        .icon-box5 { left: 27px; top: 747px; }
+
+        .travel-icon {
+            position: absolute;
+        }
+
+        .icon1 { left: 47.99px; top: 391.20px; }
+        .icon2 { left: 47.99px; top: 485.20px; }
+        .icon3 { left: 47.99px; top: 579.20px; }
+        .icon4 { left: 47.99px; top: 673.20px; }
+        .icon5 { left: 47.99px; top: 767.20px; }
+
+        .Travel {
+            position: absolute;
+            color: white;
+            font-size: 16px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.17px;
+            word-wrap: break-word;
+        }
+
+        .travel1 { left: 100px; top: 375px; }
+        .travel2 { left: 100px; top: 469px; }
+        .travel3 { left: 100px; top: 563px; }
+        .travel4 { left: 100px; top: 657px; }
+        .travel5 { left: 100px; top: 751px; }
+
+        .IndigoTicket {
+            position: absolute;
+            color: white;
+            font-size: 16px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.17px;
+            word-wrap: break-word;
+        }
+
+        .ticket1 { left: 101px; top: 400px; }
+        .ticket2 { left: 101px; top: 494px; }
+        .ticket3 { left: 101px; top: 588px; }
+        .ticket4 { left: 101px; top: 682px; }
+        .ticket5 { left: 101px; top: 776px; }
+
+        .chevron {
+            position: absolute;
+        }
+
+        .chevron1 { left: 153px; top: 370px; }
+        .chevron2 { left: 153.05px; top: 379px; }
+        .chevron3 { left: 153px; top: 464px; }
+        .chevron4 { left: 153.05px; top: 473px; }
+        .chevron5 { left: 153px; top: 554px; }
+        .chevron6 { left: 153.05px; top: 567px; }
+        .chevron7 { left: 153px; top: 652px; }
+        .chevron8 { left: 153.05px; top: 661px; }
+        .chevron9 { left: 153px; top: 746px; }
+        .chevron10 { left: 153.05px; top: 755px; }
+    </style>
+</head>
+<body>
+    <div class="TransactionInfoPage">
+        <div class="StatusBarsWhite">
+            <div class="CombinedShape">
+                <svg width="3" height="6" viewBox="0 0 3 6" fill="none">
+                    <path opacity="0.5" d="M0.682617 0.864014V5.40947C1.54314 5.02449 2.10272 4.12894 2.10272 3.13674C2.10272 2.14454 1.54314 1.24899 0.682617 0.864014Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="Rectangle battery">
+                <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+                    <path d="M0.43457 2.30306C0.43457 1.56668 1.03152 0.969727 1.7679 0.969727H18.3493C19.0856 0.969727 19.6826 1.56668 19.6826 2.30306V7.96973C19.6826 8.70611 19.0856 9.30306 18.3493 9.30306H1.7679C1.03152 9.30306 0.43457 8.70611 0.43457 7.96973V2.30306Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="Wifi">
+                <svg width="17" height="14" viewBox="0 0 17 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74811 3.28184C11.1176 3.28195 13.3966 4.24949 15.1139 5.98449C15.2432 6.11844 15.4499 6.11675 15.5772 5.98071L16.8134 4.65495C16.8779 4.58595 16.9138 4.49248 16.9133 4.39523C16.9128 4.29798 16.8758 4.20496 16.8105 4.13677C12.3032 -0.453629 5.19233 -0.453629 0.684979 4.13677C0.619687 4.20491 0.582641 4.2979 0.582039 4.39515C0.581437 4.4924 0.617328 4.5859 0.681771 4.65495L1.91828 5.98071C2.04556 6.11696 2.25242 6.11865 2.38165 5.98449C4.09917 4.24938 6.37835 3.28184 8.74811 3.28184ZM8.74811 7.5951C10.05 7.59501 11.3055 8.10926 12.2705 9.0379C12.401 9.1697 12.6066 9.16684 12.7339 9.03146L13.9686 7.7057C14.0336 7.63617 14.0697 7.54183 14.0688 7.4438C14.0678 7.34577 14.03 7.25223 13.9636 7.18411C11.0249 4.27913 6.47385 4.27913 3.5351 7.18411C3.46872 7.25223 3.43085 7.34582 3.42998 7.44388C3.42911 7.54194 3.46531 7.63627 3.53047 7.7057L4.76484 9.03146C4.89208 9.16684 5.09769 9.1697 5.22822 9.0379C6.19262 8.10987 7.44707 7.59567 8.74811 7.5951ZM11.2215 10.4972C11.2234 10.5955 11.187 10.6902 11.121 10.7591L8.98516 13.0496C8.92255 13.117 8.83719 13.1548 8.74812 13.1548C8.65906 13.1548 8.5737 13.117 8.51109 13.0496L6.37492 10.7591C6.30893 10.6902 6.27262 10.5954 6.27458 10.4971C6.27654 10.3988 6.31658 10.3057 6.38525 10.2398C7.74927 9.01379 9.74698 9.01379 11.111 10.2398C11.1796 10.3057 11.2196 10.3989 11.2215 10.4972Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="MobileSignal">
+                <svg width="19" height="13" viewBox="0 0 19 13" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1367 0.0758057H16.0673C15.4767 0.0758057 14.998 0.584573 14.998 1.21217V11.0607C14.998 11.6883 15.4767 12.197 16.0673 12.197H17.1367C17.7272 12.197 18.206 11.6883 18.206 11.0607V1.21217C18.206 0.584573 17.7272 0.0758057 17.1367 0.0758057ZM11.0771 2.72732H12.1465C12.737 2.72732 13.2158 3.23609 13.2158 3.86369V11.0607C13.2158 11.6883 12.737 12.197 12.1465 12.197H11.0771C10.4865 12.197 10.0078 11.6883 10.0078 11.0607V3.86369C10.0078 3.23609 10.4865 2.72732 11.0771 2.72732ZM7.15622 5.37884H6.08688C5.49631 5.37884 5.01755 5.8876 5.01755 6.5152V11.0607C5.01755 11.6883 5.49631 12.197 6.08688 12.197H7.15622C7.7468 12.197 8.22556 11.6883 8.22556 11.0607V6.5152C8.22556 5.8876 7.7468 5.37884 7.15622 5.37884ZM2.166 7.65156H1.09667C0.506097 7.65156 0.0273438 8.16033 0.0273438 8.78793V11.0607C0.0273438 11.6883 0.506097 12.197 1.09667 12.197H2.166C2.75657 12.197 3.23532 11.6883 3.23532 11.0607V8.78793C3.23532 8.16033 2.75657 7.65156 2.166 7.65156Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="TimeStyle">
+                <div class="time-text">9:41</div>
+            </div>
+        </div>
+        <div class="HomeIndicatorWhite">
+            <div class="Rectangle">
+                <svg width="134" height="5" viewBox="0 0 134 5" fill="none">
+                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5C0 1.11929 1.11929 0 2.5 0H131.5C132.881 0 134 1.11929 134 2.5C134 3.88071 132.881 5 131.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z" fill="#454545"/>
+                </svg>
+            </div>
+        </div>
+        <div class="Rectangle16"></div>
+        <div class="Rectangle3"></div>
+        <div class="Transactions">Transactions</div>
+        <div class="Rectangle10"></div>
+        <div class="Rectangle11"></div>
+        <div class="Feb2024">Feb 2024</div>
+        <div class="Vector dropdown-arrow">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
+                <path d="M1.21419 2.9985L7.60909 12.3246C7.74853 12.5296 7.95074 12.7002 8.19508 12.8188C8.43943 12.9375 8.71718 13 8.99998 13C9.28279 13 9.56053 12.9375 9.80488 12.8188C10.0492 12.7002 10.2514 12.5296 10.3909 12.3246L16.7858 2.9985C16.9267 2.79509 17.0006 2.56424 17 2.32935C16.9994 2.09446 16.9242 1.86388 16.7822 1.66099C16.6402 1.4581 16.4363 1.2901 16.1913 1.17403C15.9462 1.05796 15.6687 0.99794 15.3869 1.00005H2.59709C2.31659 1.00029 2.04111 1.06203 1.7983 1.17906C1.55549 1.29609 1.3539 1.4643 1.21378 1.66679C1.07366 1.86929 0.999928 2.09894 1 2.33269C1.00007 2.56645 1.07394 2.79607 1.21419 2.9985Z" stroke="white" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Expence">Expence</div>
+        <div class="Income">Income</div>
+        <div class="Oval"></div>
+        <div class="Path path1">
+          
+        </div>
+        <div class="Path path2">
+           
+        </div>
+        <div class="Path path3">
+            <svg width="64" height="107" viewBox="0 0 64 107" fill="none" style="transform: rotate(30deg);">
+                <path d="M36.8672 97.3864C43.9934 88.663 48.2921 77.3676 48.2921 65.029C48.2921 37.3987 26.7359 15 0.14502 15" stroke="#FFF9F9" stroke-width="30"/>
+            </svg>
+        </div>
+        <div class="percentage">47%</div>
+        <div class="Ellipse14 earned-dot"></div>
+        <div class="Earned">Earned</div>
+        <div class="amount earned-amount">$ 20045</div>
+        <div class="Ellipse14 spent-dot"></div>
+        <div class="Spent">Spent</div>
+        <div class="amount spent-amount">$ 20045</div>
+        <div class="Rectangle14 transaction1"></div>
+        <div class="income-amount income1">+$100</div>
+        <div class="Rectangle15 icon-box1"></div>
+        <div class="travel-icon icon1">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M7.03023 20.69L9.36023 18.73C9.71023 18.43 10.2902 18.43 10.6402 18.73L12.9702 20.69C13.5102 20.96 14.1702 20.69 14.3702 20.11L14.8102 18.78C14.9202 18.46 14.8102 17.99 14.5702 17.75L12.3002 15.47C12.1302 15.31 12.0002 14.99 12.0002 14.76V11.91C12.0002 11.49 12.3102 11.29 12.7002 11.45L17.6102 13.57C18.3802 13.9 19.0102 13.49 19.0102 12.65V11.36C19.0102 10.69 18.5102 9.92001 17.8902 9.66001L12.3002 7.25001C12.2146 7.20602 12.1418 7.14047 12.0892 7.0598C12.0366 6.97913 12.0059 6.88615 12.0002 6.79001V3.79001C12.0002 2.85001 11.3102 1.74001 10.4702 1.31001C10.1702 1.16001 9.82024 1.16001 9.52024 1.31001C8.68024 1.74001 7.99023 2.86001 7.99023 3.80001V6.80001C7.99023 6.98001 7.85023 7.19001 7.69023 7.26001L2.11023 9.67001C1.49023 9.92001 0.990234 10.69 0.990234 11.36V12.65C0.990234 13.49 1.62023 13.9 2.39023 13.57L7.30023 11.45C7.68023 11.28 8.00023 11.49 8.00023 11.91V14.76C8.00023 14.99 7.87023 15.31 7.71023 15.47L5.44023 17.75C5.20023 17.99 5.09023 18.45 5.20023 18.78L5.64023 20.11C5.82023 20.69 6.48023 20.97 7.03023 20.69Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Travel travel1">Travel</div>
+        <div class="IndigoTicket ticket1">indigo ticket</div>
+        <div class="chevron chevron1">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none">
+                <path d="M14.0142 7.67334L7.48904 1.03486L1.03558 7.74302" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="chevron chevron2">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M14.0645 8.01599L7.53934 1.37751L1.08587 8.08567" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Rectangle14 transaction2"></div>
+        <div class="income-amount income2">+$100</div>
+        <div class="Rectangle15 icon-box2"></div>
+        <div class="travel-icon icon2">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M7.03023 20.69L9.36023 18.73C9.71023 18.43 10.2902 18.43 10.6402 18.73L12.9702 20.69C13.5102 20.96 14.1702 20.69 14.3702 20.11L14.8102 18.78C14.9202 18.46 14.8102 17.99 14.5702 17.75L12.3002 15.47C12.1302 15.31 12.0002 14.99 12.0002 14.76V11.91C12.0002 11.49 12.3102 11.29 12.7002 11.45L17.6102 13.57C18.3802 13.9 19.0102 13.49 19.0102 12.65V11.36C19.0102 10.69 18.5102 9.92001 17.8902 9.66001L12.3002 7.25001C12.2146 7.20602 12.1418 7.14047 12.0892 7.0598C12.0366 6.97913 12.0059 6.88615 12.0002 6.79001V3.79001C12.0002 2.85001 11.3102 1.74001 10.4702 1.31001C10.1702 1.16001 9.82024 1.16001 9.52024 1.31001C8.68024 1.74001 7.99023 2.86001 7.99023 3.80001V6.80001C7.99023 6.98001 7.85023 7.19001 7.69023 7.26001L2.11023 9.67001C1.49023 9.92001 0.990234 10.69 0.990234 11.36V12.65C0.990234 13.49 1.62023 13.9 2.39023 13.57L7.30023 11.45C7.68023 11.28 8.00023 11.49 8.00023 11.91V14.76C8.00023 14.99 7.87023 15.31 7.71023 15.47L5.44023 17.75C5.20023 17.99 5.09023 18.45 5.20023 18.78L5.64023 20.11C5.82023 20.69 6.48023 20.97 7.03023 20.69Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Travel travel2">Travel</div>
+        <div class="IndigoTicket ticket2">indigo ticket</div>
+        <div class="chevron chevron3">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none">
+                <path d="M14.0142 7.67346L7.48904 1.03498L1.03558 7.74314" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="chevron chevron4">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M14.0645 8.01611L7.53934 1.37763L1.08587 8.08579" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Rectangle14 transaction3"></div>
+        <div class="income-amount income3">+$100</div>
+        <div class="Rectangle15 icon-box3"></div>
+        <div class="travel-icon icon3">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M7.03023 20.69L9.36023 18.73C9.71023 18.43 10.2902 18.43 10.6402 18.73L12.9702 20.69C13.5102 20.96 14.1702 20.69 14.3702 20.11L14.8102 18.78C14.9202 18.46 14.8102 17.99 14.5702 17.75L12.3002 15.47C12.1302 15.31 12.0002 14.99 12.0002 14.76V11.91C12.0002 11.49 12.3102 11.29 12.7002 11.45L17.6102 13.57C18.3802 13.9 19.0102 13.49 19.0102 12.65V11.36C19.0102 10.69 18.5102 9.92001 17.8902 9.66001L12.3002 7.25001C12.2146 7.20602 12.1418 7.14047 12.0892 7.0598C12.0366 6.97913 12.0059 6.88615 12.0002 6.79001V3.79001C12.0002 2.85001 11.3102 1.74001 10.4702 1.31001C10.1702 1.16001 9.82024 1.16001 9.52024 1.31001C8.68024 1.74001 7.99023 2.86001 7.99023 3.80001V6.80001C7.99023 6.98001 7.85023 7.19001 7.69023 7.26001L2.11023 9.67001C1.49023 9.92001 0.990234 10.69 0.990234 11.36V12.65C0.990234 13.49 1.62023 13.9 2.39023 13.57L7.30023 11.45C7.68023 11.28 8.00023 11.49 8.00023 11.91V14.76C8.00023 14.99 7.87023 15.31 7.71023 15.47L5.44023 17.75C5.20023 17.99 5.09023 18.45 5.20023 18.78L5.64023 20.11C5.82023 20.69 6.48023 20.97 7.03023 20.69Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Travel travel3">Travel</div>
+        <div class="IndigoTicket ticket3">indigo ticket</div>
+        <div class="chevron chevron5">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none">
+                <path d="M14.0142 7.67334L7.48904 1.03486L1.03558 7.74302" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="chevron chevron6">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M14.0645 8.01611L7.53934 1.37763L1.08587 8.08579" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Rectangle14 transaction4"></div>
+        <div class="income-amount income4">+$100</div>
+        <div class="Rectangle15 icon-box4"></div>
+        <div class="travel-icon icon4">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M7.03023 20.69L9.36023 18.73C9.71023 18.43 10.2902 18.43 10.6402 18.73L12.9702 20.69C13.5102 20.96 14.1702 20.69 14.3702 20.11L14.8102 18.78C14.9202 18.46 14.8102 17.99 14.5702 17.75L12.3002 15.47C12.1302 15.31 12.0002 14.99 12.0002 14.76V11.91C12.0002 11.49 12.3102 11.29 12.7002 11.45L17.6102 13.57C18.3802 13.9 19.0102 13.49 19.0102 12.65V11.36C19.0102 10.69 18.5102 9.92001 17.8902 9.66001L12.3002 7.25001C12.2146 7.20602 12.1418 7.14047 12.0892 7.0598C12.0366 6.97913 12.0059 6.88615 12.0002 6.79001V3.79001C12.0002 2.85001 11.3102 1.74001 10.4702 1.31001C10.1702 1.16001 9.82024 1.16001 9.52024 1.31001C8.68024 1.74001 7.99023 2.86001 7.99023 3.80001V6.80001C7.99023 6.98001 7.85023 7.19001 7.69023 7.26001L2.11023 9.67001C1.49023 9.92001 0.990234 10.69 0.990234 11.36V12.65C0.990234 13.49 1.62023 13.9 2.39023 13.57L7.30023 11.45C7.68023 11.28 8.00023 11.49 8.00023 11.91V14.76C8.00023 14.99 7.87023 15.31 7.71023 15.47L5.44023 17.75C5.20023 17.99 5.09023 18.45 5.20023 18.78L5.64023 20.11C5.82023 20.69 6.48023 20.97 7.03023 20.69Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Travel travel4">Travel</div>
+        <div class="IndigoTicket ticket4">indigo ticket</div>
+        <div class="chevron chevron7">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none">
+                <path d="M14.0142 7.67334L7.48904 1.03486L1.03558 7.74302" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="chevron chevron8">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M14.0645 8.01611L7.53934 1.37763L1.08587 8.08579" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Rectangle14 transaction5"></div>
+        <div class="income-amount income5">+$100</div>
+        <div class="Rectangle15 icon-box5"></div>
+        <div class="travel-icon icon5">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none">
+                <path d="M7.03023 20.69L9.36023 18.73C9.71023 18.43 10.2902 18.43 10.6402 18.73L12.9702 20.69C13.5102 20.96 14.1702 20.69 14.3702 20.11L14.8102 18.78C14.9202 18.46 14.8102 17.99 14.5702 17.75L12.3002 15.47C12.1302 15.31 12.0002 14.99 12.0002 14.76V11.91C12.0002 11.49 12.3102 11.29 12.7002 11.45L17.6102 13.57C18.3802 13.9 19.0102 13.49 19.0102 12.65V11.36C19.0102 10.69 18.5102 9.92001 17.8902 9.66001L12.3002 7.25001C12.2146 7.20602 12.1418 7.14047 12.0892 7.0598C12.0366 6.97913 12.0059 6.88615 12.0002 6.79001V3.79001C12.0002 2.85001 11.3102 1.74001 10.4702 1.31001C10.1702 1.16001 9.82024 1.16001 9.52024 1.31001C8.68024 1.74001 7.99023 2.86001 7.99023 3.80001V6.80001C7.99023 6.98001 7.85023 7.19001 7.69023 7.26001L2.11023 9.67001C1.49023 9.92001 0.990234 10.69 0.990234 11.36V12.65C0.990234 13.49 1.62023 13.9 2.39023 13.57L7.30023 11.45C7.68023 11.28 8.00023 11.49 8.00023 11.91V14.76C8.00023 14.99 7.87023 15.31 7.71023 15.47L5.44023 17.75C5.20023 17.99 5.09023 18.45 5.20023 18.78L5.64023 20.11C5.82023 20.69 6.48023 20.97 7.03023 20.69Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="Travel travel5">Travel</div>
+        <div class="IndigoTicket ticket5">indigo ticket</div>
+        <div class="chevron chevron9">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none">
+                <path d="M14.0142 7.67334L7.48904 1.03486L1.03558 7.74302" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="chevron chevron10">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M14.0645 8.01611L7.53934 1.37763L1.08587 8.08579" stroke="#ADF2D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
